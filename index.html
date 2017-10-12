@@ -8,7 +8,16 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
+<style>
+		[data-toggle='on'] {
+	  display:block;
+	}
+	[data-toggle='off'] {
+	  display:none;
+	}
+</style>
+</head>
+
 	<!-- Wrapper -->
  -			<div id="wrapper">
 	<body>
@@ -16,95 +25,123 @@
 					<header id="header">
 						<div class="inner">
 
-							<!-- Nav -->
+							<!-- Nav
 								<nav>
 									<ul>
 										<li><a href="#menu">Menu</a></li>
 									</ul>
 								</nav>
 						</div>
-					</header>
+					</header>-->
+					<!-- Menu
+						<nav id="menu">
+							<h2>Menu</h2>
+							<ul>
+								<li><a href="index.html">Portfolio</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="cv.html">CV</a></li>
+							</ul>
+						</nav>-->
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Portfolio</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="cv.html">CV</a></li>
-						</ul>
+					<!-- Navbar -->
+					<nav class="navbar" role="navigation">
+							<div class="container">
+
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse nav-collapse">
+											<div class="menu-container">
+													<ul class="nav navbar-nav navbar-nav-right">
+															<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About</a></li>
+															<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#portfolio">Portfolio</a></li>
+															<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
+													</ul>
+											</div>
+									</div>
+									<!-- End Navbar Collapse -->
+							</div>
 					</nav>
-
+					<!-- Navbar -->
 				<!-- Main -->
-					<div id="main">
+					<div id="about">
 						<div class="inner">
-							<header>
-								<h3>Project Management and Technology Solutions</h3>
+							<header style="text-align:center">
+								<img src="images/molly.png" style="height:200px;width:auto;">
 								<h1>Molly McGee</h1>
+								<h3>Project Management and Technology Solutions</h3>
 								<p>Currently a master's student at the University of Texas at Austin's School of Information, I enjoy learning about new technologies and how they can apply to practical, everyday situations. Take a look at my portfolio to learn more about my past and current projects.</p>
 							</header>
+
+							<div id=portfolio" style="text-align:center">
+							<h1>Portfolio</h1>
+								<div>
+									<button data-filter="tiles" data-reset="true">Show All</button>
+									<button data-filter="tiles" data-filter-tag="a">Management</button>
+									<button data-filter="tiles" data-filter-tag="b">Solutions</button>
+									<button data-filter="tiles" data-filter-tag="c">Design</button>
+									<button data-filter="tiles" data-filter-tag="d">Research</button>
+								</div>
 							<section class="tiles">
-								<article class="style1">
+								<article class="style2" data-tags="a b c">
 									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
+										<img src="images/tiles/computer.jpg" alt="" />
 									</span>
 									<a href="project-management.html">
-										<h2>Project Management</h2>
+										<h2>Undergraduate Curriculum Development</h2>
 										<div class="content">
-											<p>Collaborative undergraduate course creation.</p>
+											<p>Project manager for collaborative redesign of an online undergraduate course.</p>
 										</div>
 									</a>
 								</article>
-								<article class="style2">
+								<article class="style2" data-tags="b c">
 									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
+										<img src="images/tiles/3d_print.png" alt="" />
 									</span>
 									<a href="tutorials.html">
-										<h2>Content Creation</h2>
+										<h2>iSchool Tutorials</h2>
 										<div class="content">
-											<p>Instructional tutorials for iSchool IT Lab.</p>
+											<p>Video tutorials for undergraduate and master's students.</p>
 										</div>
 									</a>
 								</article>
-								<article class="style3">
+								<article class="style2" data-tags="b">
 									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
+										<img src="images/tiles/grading.jpeg" alt="" />
 									</span>
-									<a href="integration.html">
-										<h2>Cross-platform Integrations</h2>
+									<a href=integration.html">
+										<h2>Instructor-TA Grading System</h2>
 										<div class="content">
-											<p>Development of IT Lab communications systems for streamlining efficiency.</p>
+											<p>Integration of ticketing and grading systems for iSchool Teaching Assistants.</p>
 										</div>
 									</a>
 								</article>
-								<article class="style4">
+								<article class="style2" data-tags="d">
 									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
+										<img src="images/tiles/coldwar-square.png" alt="" />
 									</span>
 									<a href="research.html">
-										<h2>Archival Research</h2>
+										<h2>Cold War Documentary Research</h2>
 										<div class="content">
-											<p>Soviet Union documentary research.</p>
+											<p>Research for an independent filmmaker at the Bush Presidential Archive.</p>
 										</div>
 									</a>
 								</article>
-								<article class="style5">
+								<article class="style2" data-tags="b c d">
 									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
+										<img src="images/tiles/archive.jpeg" alt="" />
 									</span>
 									<a href="solutions.html">
-										<h2>Interdisciplinary Solutions</h2>
+										<h2>Crowdsourcing to Improve Archives</h2>
 										<div class="content">
 											<p>User-centric study of archival finding.</p>
 										</div>
 									</a>
 								</article>
-								<article class="style6">
+								<article class="style2" data-tags="c">
 									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
+										<img src="images/tiles/tamu.png" alt="" />
 									</span>
 									<a href="marketing.html">
-										<h2>Marketing</h2>
+										<h2>Communications Internship</h2>
 										<div class="content">
 											<p>Newsletter and graphics creation and distribution for TAMU English Department.</p>
 										</div>
@@ -113,50 +150,108 @@
 							</section>
 						</div>
 					</div>
+				</div>
+				<br />
 
 				<!-- Footer -->
-					<footer id="footer">
+					<footer>
+						<div id="contact">
 						<div class="inner">
 							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="mailto:mollymcgee316@gmail.com">
-									<div class="field half first">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="special" /></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									<li><a href="https://www.twitter.com/mollmcgee" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://www.facebook.com/molly.mcgee.7798" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.mcgeemolly.github.com" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="mailto:mollymcgee316@gmail.com" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
+								<!-- Contact -->
+								<div id="contact" style="text-align:center">
+										<div >
+												<div>
+														<div>
+																<div>
+																	 <h1>Contact Me</h1>
+																		<p>I'm always interested in learning about new projects or collaborating on ideas!</p>
+																</div>
+														</div>
+														<!--// end row -->
+														<div class="row">
+																<div >
+																		<h2>Location</h2>
+																		<a href="#">Austin, Texas</a>
+																</div>
+																<div>
+																		<h2>Email</h2>
+																		<a href="mailto:#">mollymcgee316@gmail.com</a>
+																</div>
+																<div >
+																		<h2>Web</h2>
+																		<a href="#">mollykmcgee.com</a>
+																</div>
+																<div>
+																	<h2>Follow</h2>
+																	<ul class="icons" style="text-align:center">
+																		<li><a href="https://www.twitter.com/mollmcgee" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+																		<li><a href="https://www.facebook.com/molly.mcgee.7798" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+																		<li><a href="https://www.mcgeemolly.github.com" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+																	</ul>
+																</div>
+														</div>
+
+														<!--// end row -->
+												</div>
+										</div>
+								</div>
 						</div>
+					</div>
 					</footer>
 
 			</div>
 
 		<!-- Scripts -->
+		<script type="text/javascript">
+console.log('ran');
+
+document.addEventListener('click', function (e) {
+  var button = e.target;
+
+  if (button.getAttribute('data-reset') === 'true') {
+    // Reset the filters
+    var filter = button.getAttribute('data-filter');
+    resetFilter(filter);
+  } else {
+    // Filter the tag
+    var filter = button.getAttribute('data-filter');
+    var tag    = button.getAttribute('data-filter-tag');
+    filterTag(filter, tag);
+  }
+});
+
+// Filter tag
+function filterTag (filter, tag) {
+  var items = document.querySelectorAll('.' + filter + ' > article');
+
+  for (var i = 0; i < items.length; i++) {
+    var itemTags = items[i].getAttribute('data-tags');
+
+    // Catch case with no tags
+    if (itemTags != null) {
+      if (itemTags.indexOf(tag) < 0) {
+        items[i].setAttribute('data-toggle', 'off');
+      }
+    }
+  }
+}
+
+// Reset filters
+function resetFilter (filter) {
+  var items = document.querySelectorAll('.' + filter + ' > article');
+
+  for (var i = 0; i < items.length; i++) {
+    items[i].setAttribute('data-toggle', 'on');
+  }
+}
+</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
