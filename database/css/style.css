@@ -294,8 +294,6 @@
 
 
 
-	/* Buttons */
-
 		.button
 		{
 			position: relative;
@@ -868,6 +866,64 @@
 	.sidebar header h2
 	{
 		font-size: 1.6em;
+	}
+
+	/*********************************************************************************/
+	/* Featured Content                                                                          */
+	/*********************************************************************************/
+
+	#featured-content {
+		overflow: hidden;
+		width: 75%;
+		margin: 0px auto;
+		padding: 30px 0px;
+		position: relative;
+		background: #fff;
+	}
+
+	#featured-content h2 {
+		padding: 0px 0px 20px 0px;
+		font-size: 30px;
+	}
+
+	#featured-content #column1 {
+		float: left;
+		width: 210px;
+
+	}
+
+	#featured-content #column2 {
+		float: left;
+		width: 210px;
+		margin-left: 25px;
+
+	}
+
+	#featured-content #column3 {
+		float: left;
+		width: 210px;
+		margin-left: 50px;
+	}
+
+	#featured-content #column4 {
+		float: right;
+		width: 210px;
+	}
+
+	#featured-content #c1  {
+		float: left;
+		width: 400px;
+	}
+
+	#featured-content #c2 {
+		float: right;
+		width: 500px;
+	}
+
+
+	#featured-content img {
+		background: #000000;
+		border-radius: 1px;
 	}
 
 /*********************************************************************************/
